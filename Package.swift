@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.6
 //
 //  Package.swift
 //  PotentCodables
@@ -21,14 +21,15 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "PotentCodables",
-      targets: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1", "PotentYAML", "Cfyaml"]
-    ),
+      name: "PotentCodables",              
+      targets: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1", "Cfyaml"]
+      // targets: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1", "PotentYAML", "Cfyaml"]
+    )
   ],
-  dependencies: [
-    .package(url: "https://github.com/attaswift/BigInt.git", from: "5.0.0"),
-    .package(url: "https://github.com/lukaskubanek/OrderedDictionary.git", from: "2.2.2")
-  ],
+   dependencies: [
+    .package(url: "https://github.com/vinidiktov/BigIntKit.git", revision: "46ea3d4be50b198468f14f899753e58d85be7499"),
+    .package(url: "https://github.com/vinidiktov/OrderedDictionaryKit.git", revision: "e80bab83da7ac298c848bbec657c576a7260d8c0"),  
+   ],
   targets: [
     .target(
       name: "PotentCodables"
@@ -43,7 +44,7 @@ let package = Package(
     ),
     .target(
       name: "PotentASN1",
-      dependencies: ["PotentCodables", "BigInt", "OrderedDictionary"]
+      dependencies: ["PotentCodables", "BigIntKit", "OrderedDictionaryKit"]
     ),
     .target(    
       name: "Cfyaml",
@@ -55,13 +56,15 @@ let package = Package(
       ]
     ),
     .target(
-      name: "PotentYAML",
-      dependencies: ["Cfyaml", "PotentCodables"]
+      name: "PotentYAMLKit",
+      dependencies: ["Cfyaml", "PotentCodables"],
+      path: "Sources/PotentYAML"
     ),
     .testTarget(
       name: "PotentCodablesTests",
-      dependencies: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1", "PotentYAML"],
+      dependencies: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1"],
+      // dependencies: ["PotentCodables", "PotentJSON", "PotentCBOR", "PotentASN1", "PotentYAML"],
       path: "./Tests"
-    )
+    ),
   ]
 )

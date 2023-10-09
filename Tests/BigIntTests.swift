@@ -8,7 +8,7 @@
 //  Distributed under the MIT License, See LICENSE for details.
 //
 
-import BigInt
+import BigIntKit
 @testable import PotentASN1
 import XCTest
 

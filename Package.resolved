@@ -1,25 +1,21 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "BigInt",
-        "repositoryURL": "https://github.com/attaswift/BigInt.git",
-        "state": {
-          "branch": null,
-          "revision": "19f5e8a48be155e34abb98a2bcf4a343316f0343",
-          "version": "5.0.0"
-        }
-      },
-      {
-        "package": "OrderedDictionary",
-        "repositoryURL": "https://github.com/lukaskubanek/OrderedDictionary.git",
-        "state": {
-          "branch": null,
-          "revision": "69ed90dcfc8cf380c81fd16c7a6d699e74870ad9",
-          "version": "2.3.0"
-        }
+  "pins" : [
+    {
+      "identity" : "bigintkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vinidiktov/BigIntKit.git",
+      "state" : {
+        "revision" : "46ea3d4be50b198468f14f899753e58d85be7499"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "ordereddictionarykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vinidiktov/OrderedDictionaryKit.git",
+      "state" : {
+        "revision" : "e80bab83da7ac298c848bbec657c576a7260d8c0"
+      }
+    }
+  ],
+  "version" : 2
 }

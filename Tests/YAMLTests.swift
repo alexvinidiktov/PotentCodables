@@ -9,7 +9,7 @@
 //
 
 import Foundation
-@testable import PotentYAML
+@testable import PotentYAMLKit
 import XCTest
 
 

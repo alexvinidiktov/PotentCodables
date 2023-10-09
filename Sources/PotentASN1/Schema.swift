@@ -8,9 +8,9 @@
 //  Distributed under the MIT License, See LICENSE for details.
 //
 
-import BigInt
+import BigIntKit
 import Foundation
-import OrderedDictionary
+import OrderedDictionaryKit
 import PotentCodables
 
 
