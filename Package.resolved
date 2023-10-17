@@ -3,7 +3,7 @@
     {
       "identity" : "bigintkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vinidiktov/BigIntKit.git",
+      "location" : "https://gitlab.e-imza.az/emilmsyv/bigintkit.git",
       "state" : {
         "revision" : "46ea3d4be50b198468f14f899753e58d85be7499"
       }
@@ -11,7 +11,7 @@
     {
       "identity" : "ordereddictionarykit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vinidiktov/OrderedDictionaryKit.git",
+      "location" : "https://gitlab.e-imza.az/emilmsyv/ordereddictionarykit.git",
       "state" : {
         "revision" : "e80bab83da7ac298c848bbec657c576a7260d8c0"
       }
