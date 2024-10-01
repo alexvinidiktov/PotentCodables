@@ -28,7 +28,7 @@ let package = Package(
   ],
    dependencies: [
     .package(url: "https://gitlab.e-imza.az/emilmsyv/BigIntKit.git", revision: "46ea3d4be50b198468f14f899753e58d85be7499"),
-    .package(url: "https://gitlab.e-imza.az/emilmsyv/OrderedDictionaryKit.git", revision: "e80bab83da7ac298c848bbec657c576a7260d8c0"),
+    .package(url: "https://gitlab.e-imza.az/emilmsyv/OrderedDictionaryKit.git", revision: "c84e66a7a141478a6e9243dcb6dbf505d1681589"),
    ],
   targets: [
     .target(
